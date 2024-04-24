@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!-- 
+  <!--
     Microsoft ResX Schema 
-    
+
     Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
     associated with the data types.
-    
+
     Example:
-    
+
     ... ado.net/XML headers & schema ...
     <resheader name="resmimetype">text/microsoft-resx</resheader>
     <resheader name="version">2.0</resheader>
@@ -26,36 +26,36 @@
         <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
         <comment>This is a comment</comment>
     </data>
-                
-    There are any number of "resheader" rows that contain simple 
+
+    There are any number of "resheader" rows that contain simple
     name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
     mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
     extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
     read any of the formats listed below.
-    
+
     mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
     
     mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
             : and then encoded with base64 encoding.
 
     mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
+    value   : The object must be serialized into a byte array
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
@@ -117,11 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Picture2.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="Picture2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAA3QAAAKICAYAAAA4t7htAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAA/7JJREFUeF7s/WdzJEmWpol2z/bIvdLTIysjd+Zu17f5D/MlALiDOOccgINzzgKB
+        DQAACw0B7QfALAAA/7JJREFUeF7s/WdzJEmWpol2z/bIvdLTIysjd+Zu17f5D/MlALiDOOccgINzzgKB
         4JGZQZNUJSuSVdWz+2N13/eoHjM1c3OHA4GIjMzKEHnCzI27mcL0PK7sn/jPGPPPbvpPU5P3TMiEmfSZ
         skxg3T0wmbpnUlOYYn42PWmKuWnTrGZNt1EwnXrO9FoF06zMmVIuZbKzk2Ya26e5n9uHx/HhsvGJXZtj
         ampSiC5P2v+m+Mcbdp7B9Ukkbe8zep+kayPRY1xH9JiD+OdOpaYA55O3Tb6eT4cpptP0RIT09ISZnkaa
@@ -13709,5 +13713,184 @@
         mIQkcqi9xGOQc5hOzmXoaQcJKXauF4O+rhepA1yPx2BuDPdDTnCR2+NKnR4Xx9u+778ALnJeXv0Ox24A
         AAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="Picture2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-5, -4</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Picture2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="Picture2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>893, 809</value>
+  </data>
+  <data name="Picture2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Picture2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Picture2.Name" xml:space="preserve">
+    <value>Picture2</value>
+  </data>
+  <data name="&gt;&gt;Picture2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Picture2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Picture2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="RegistrationButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="RegistrationButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="RegistrationButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI Light, 13.8pt</value>
+  </data>
+  <data name="RegistrationButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>318, 650</value>
+  </data>
+  <data name="RegistrationButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="RegistrationButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>269, 52</value>
+  </data>
+  <data name="RegistrationButton.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="RegistrationButton.Text" xml:space="preserve">
+    <value>Sign up</value>
+  </data>
+  <data name="&gt;&gt;RegistrationButton.Name" xml:space="preserve">
+    <value>RegistrationButton</value>
+  </data>
+  <data name="&gt;&gt;RegistrationButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RegistrationButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;RegistrationButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="NameRegText.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI Light, 13.8pt</value>
+  </data>
+  <data name="NameRegText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>422, 339</value>
+  </data>
+  <data name="NameRegText.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="NameRegText.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NameRegText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>305, 40</value>
+  </data>
+  <data name="NameRegText.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;NameRegText.Name" xml:space="preserve">
+    <value>NameRegText</value>
+  </data>
+  <data name="&gt;&gt;NameRegText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NameRegText.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;NameRegText.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="LoginRegText.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI Light, 13.8pt</value>
+  </data>
+  <data name="LoginRegText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>422, 421</value>
+  </data>
+  <data name="LoginRegText.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="LoginRegText.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LoginRegText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>305, 40</value>
+  </data>
+  <data name="LoginRegText.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;LoginRegText.Name" xml:space="preserve">
+    <value>LoginRegText</value>
+  </data>
+  <data name="&gt;&gt;LoginRegText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LoginRegText.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LoginRegText.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="PasswordRegText.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI Light, 13.8pt</value>
+  </data>
+  <data name="PasswordRegText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>422, 501</value>
+  </data>
+  <data name="PasswordRegText.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="PasswordRegText.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="PasswordRegText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>305, 40</value>
+  </data>
+  <data name="PasswordRegText.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;PasswordRegText.Name" xml:space="preserve">
+    <value>PasswordRegText</value>
+  </data>
+  <data name="&gt;&gt;PasswordRegText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PasswordRegText.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PasswordRegText.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>en</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 20</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>873, 796</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>RegistrationWindow</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

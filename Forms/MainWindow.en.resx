@@ -17668,6 +17668,15 @@
         ZCliv42PccUAyIrpz/F03Cz4/wGmjd6QnTU9VQAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>283, 128</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>238, 59</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>You might like it</value>
+  </data>
   <data name="ProfileButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAI4AAACOCAYAAADn/TAIAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -17766,7 +17775,7 @@
   <data name="MyListsButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAI4AAACOCAYAAADn/TAIAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DQAACw0B7QfALAAABRVJREFUeF7t3etN40AUhmFKSAkpgRIogQ6gA+gg6WDpADqADlJCSuAXFyFQxFVI
+        DAAACwwBP0AiyAAABRVJREFUeF7t3etN40AUhmFKSAkpgRIogQ6gA+gg6WDpADqADlJCSuAXFyFQxFVI
         XLzzec9Es2YcOWYmkMn7SEdgx/FmzvnWDiuR3QIAAMCPGbmauaoKLq1P60Qif1zFGl1qjV0hgdKvNM06
         d4UEYs0tuQhOIrHmllwEJ5FYc0sugpNIrLklF8FJJNbckovgJBJrbslFcBKJNfe/Gg6H0f3fqcFgkPy8
         Hc9HcBKJNbeug4OD6vz8vJpMJvXX0WgUPa5Laah7e3vz7dPT0/r84TF9S+eeTqf161Tt7u5Gj7MiOInE
@@ -17857,6 +17866,9 @@
         AAAAAAAAAAAAAAAAAAAAAEBrNjb+B5ugfVmRlfvtAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="FormMyRecommendationButton.Text" xml:space="preserve">
+    <value>FORM MY RECOMMENDATIONS</value>
+  </data>
   <data name="AddButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAYAAAA5ZDbSAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -17913,6 +17925,24 @@
         18ymImX/EMY5ofSZ7KyxoDf9T6mOlJa/JGYA/yu1+ay2JO7Y9VHdU8CMeGFq83F8KjKDUvJTw0xxo5u0
         aFosXaIy9v+AGcVbKAzjfTI3ZHEnCeOcBCzjdaTeCgkhhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQ
         QgghhBBCCCGEEEIIIYQQQggxMxYW/gUMY8VnQpXEhAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="Price.Text" xml:space="preserve">
+    <value>Price:</value>
+  </data>
+  <data name="Square.Text" xml:space="preserve">
+    <value>Square:
+</value>
+  </data>
+  <data name="Address.Text" xml:space="preserve">
+    <value>Adress:
+</value>
+  </data>
+  <data name="AmountOfFloors.Size" type="System.Drawing.Size, System.Drawing">
+    <value>242, 42</value>
+  </data>
+  <data name="AmountOfFloors.Text" xml:space="preserve">
+    <value>Number of floors:
 </value>
   </data>
   <data name="AddFavButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

@@ -121,7 +121,7 @@
   <data name="Picture7.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAyEAAAH7CAYAAADb1JCTAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAA/7JJREFUeF7svfdzFsmW533/rtk33n1nr+nobjyBh4AG2kV3091A4BoIAg+BE4KQ
+        DgAACw4BQL7hQQAA/7JJREFUeF7svfdzFsmW533/rtk33n1nr+nobjyBh4AG2kV3091A4BoIAg+BE4KQ
         BAgTGFkkIYckBDLIG6SW8N409557Z2diZ2ZnaiZmd+b9fk9mVmXVU48Mpm/f2f3hG1WVlWWfqsrzec45
         mb/KO75FVHlbM5Sfty1VBfnb5ESBEee1PH9LhgoKtr6RTpzAvq24n7y8zXL8+A+Sm7tRjh7doMrJWa86
         cmSdHD7stNbTOtTbJLlHf5BjuVbHNquOH9syrtx9OZ63RY7x2Faczyaeo6+8Y3HlQwVWJ3AeGcLxfJ3E
@@ -9625,5 +9625,27 @@
         vznA34lR/+pFcp4gooGlp2Mu4/Ve5b7XaNvsnw6mEtQSKYJJgABSj/GhFvx/S1loiYlF54AAAAAASUVO
         RK5CYII=
 </value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>229, 22</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>369, 59</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Choose one answer option</value>
+  </data>
+  <data name="Town.Text" xml:space="preserve">
+    <value>City:</value>
+  </data>
+  <data name="TypeOfRealty.Text" xml:space="preserve">
+    <value>Type of property:
+</value>
+  </data>
+  <data name="Purpose.Text" xml:space="preserve">
+    <value>For what:</value>
+  </data>
+  <data name="NextButtonButton.Text" xml:space="preserve">
+    <value>FURTHER</value>
   </data>
 </root>

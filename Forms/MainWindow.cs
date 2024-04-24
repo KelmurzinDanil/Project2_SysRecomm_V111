@@ -49,8 +49,6 @@ namespace design
             Square.BackColor = Color.Transparent;
             AmountOfFloors.Parent = Picture3;
             AmountOfFloors.BackColor = Color.Transparent;
-            Floor.Parent = Picture3;
-            Floor.BackColor = Color.Transparent;
             ProfileButton.Parent = Picture3;
             ProfileButton.BackColor = Color.Transparent;
             ProfileButton.FlatAppearance.BorderSize = 0;
