@@ -18,7 +18,17 @@ namespace design
             PasswordTextAutho.PlaceholderText = "Пароль";
             LoginTextAutho.KeyPress += LoginTextAutho_KeyPress;
             PasswordTextAutho.Enter += PasswordTextAutho_Enter;
+            PasswordTextAutho.KeyPress += PasswordTextAutho_KeyPress;
         }
+
+        private void PasswordTextAutho_KeyPress(object? sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == ' ')
+            {
+                e.Handled = true;
+            }
+        }
+
         private void PasswordTextAutho_Enter(object? sender, EventArgs e)
         {
             if (PasswordTextAutho.Text == "Пароль")
@@ -27,6 +37,7 @@ namespace design
                 PasswordTextAutho.PasswordChar = '*';
             }
         }
+
         private void LoginTextAutho_KeyPress(object? sender, KeyPressEventArgs e)
         {
             if (!char.IsLetterOrDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != '@' && e.KeyChar != '.' && !char.GetUnicodeCategory(e.KeyChar).Equals(System.Globalization.UnicodeCategory.LowercaseLetter) && !char.GetUnicodeCategory(e.KeyChar).Equals(System.Globalization.UnicodeCategory.UppercaseLetter))
@@ -55,6 +66,7 @@ namespace design
         {
             LoginTextAutho.Clear();
         }
+
         private void PasswordText_Click(object sender, EventArgs e)
         {
             PasswordTextAutho.Clear();

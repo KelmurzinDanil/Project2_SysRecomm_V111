@@ -49,9 +49,9 @@
             AddressText = new Label();
             PriceText = new Label();
             SquareText = new Label();
+            FloorText = new Label();
             AddFavButton = new Button();
             AddBlackListButton = new Button();
-            FloorText = new Label();
             ((System.ComponentModel.ISupportInitialize)Picture3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)RealtyPhoto).BeginInit();
             SuspendLayout();
@@ -111,40 +111,42 @@
             BlackListButton.Size = new Size(64, 80);
             BlackListButton.TabIndex = 9;
             BlackListButton.UseVisualStyleBackColor = true;
+            BlackListButton.Click += BlackListButton_Click;
             // 
             // MyListsButton
             // 
+            MyListsButton.Image = (Image)resources.GetObject("MyListsButton.Image");
             MyListsButton.Location = new Point(595, 12);
             MyListsButton.Margin = new Padding(3, 4, 3, 4);
             MyListsButton.Name = "MyListsButton";
             MyListsButton.Size = new Size(64, 80);
             MyListsButton.TabIndex = 10;
-            MyListsButton.Text = "мои подбор";
             MyListsButton.UseVisualStyleBackColor = true;
+            MyListsButton.Click += MyListsButton_Click;
             // 
             // StraightButton
             // 
             StraightButton.FlatStyle = FlatStyle.Flat;
             StraightButton.Image = (Image)resources.GetObject("StraightButton.Image");
-            StraightButton.Location = new Point(639, 498);
+            StraightButton.Location = new Point(639, 476);
             StraightButton.Margin = new Padding(3, 4, 3, 4);
             StraightButton.Name = "StraightButton";
-            StraightButton.Size = new Size(88, 78);
+            StraightButton.Size = new Size(75, 75);
             StraightButton.TabIndex = 11;
             StraightButton.UseVisualStyleBackColor = true;
-            StraightButton.Click += StraightButton_Click;
+            StraightButton.Click += StraightButton_Click_1;
             // 
             // BackButton
             // 
             BackButton.FlatStyle = FlatStyle.Flat;
             BackButton.Image = (Image)resources.GetObject("BackButton.Image");
-            BackButton.Location = new Point(73, 498);
+            BackButton.Location = new Point(73, 476);
             BackButton.Margin = new Padding(3, 4, 3, 4);
             BackButton.Name = "BackButton";
-            BackButton.Size = new Size(88, 78);
+            BackButton.Size = new Size(75, 75);
             BackButton.TabIndex = 12;
             BackButton.UseVisualStyleBackColor = true;
-            BackButton.Click += BackButton_Click;
+            BackButton.Click += BackButton_Click_1;
             // 
             // FormMyRecommendationButton
             // 
@@ -184,6 +186,7 @@
             EstimateButton.Size = new Size(59, 70);
             EstimateButton.TabIndex = 17;
             EstimateButton.UseVisualStyleBackColor = true;
+            EstimateButton.Click += EstimateButton_Click;
             // 
             // RealtyPhoto
             // 
@@ -280,6 +283,16 @@
             SquareText.Size = new Size(241, 41);
             SquareText.TabIndex = 26;
             // 
+            // FloorText
+            // 
+            FloorText.BackColor = Color.Transparent;
+            FloorText.Font = new Font("Constantia", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            FloorText.ForeColor = SystemColors.ButtonHighlight;
+            FloorText.Location = new Point(455, 732);
+            FloorText.Name = "FloorText";
+            FloorText.Size = new Size(132, 41);
+            FloorText.TabIndex = 27;
+            // 
             // AddFavButton
             // 
             AddFavButton.FlatStyle = FlatStyle.Flat;
@@ -298,28 +311,18 @@
             AddBlackListButton.Location = new Point(212, 804);
             AddBlackListButton.Margin = new Padding(3, 4, 3, 4);
             AddBlackListButton.Name = "AddBlackListButton";
-            AddBlackListButton.Size = new Size(59, 70);
+            AddBlackListButton.Size = new Size(58, 58);
             AddBlackListButton.TabIndex = 29;
             AddBlackListButton.UseVisualStyleBackColor = true;
-            // 
-            // FloorText
-            // 
-            FloorText.BackColor = Color.Transparent;
-            FloorText.Font = new Font("Constantia", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            FloorText.ForeColor = SystemColors.ButtonHighlight;
-            FloorText.Location = new Point(440, 732);
-            FloorText.Name = "FloorText";
-            FloorText.Size = new Size(147, 41);
-            FloorText.TabIndex = 30;
             // 
             // MainWindow
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(791, 974);
-            Controls.Add(FloorText);
             Controls.Add(AddBlackListButton);
             Controls.Add(AddFavButton);
+            Controls.Add(FloorText);
             Controls.Add(SquareText);
             Controls.Add(PriceText);
             Controls.Add(AddressText);
@@ -371,8 +374,8 @@
         private System.Windows.Forms.Label AddressText;
         private System.Windows.Forms.Label PriceText;
         private System.Windows.Forms.Label SquareText;
+        private System.Windows.Forms.Label FloorText;
         private System.Windows.Forms.Button AddFavButton;
         private System.Windows.Forms.Button AddBlackListButton;
-        private Label FloorText;
     }
 }

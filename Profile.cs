@@ -5,6 +5,7 @@ namespace design
     public partial class Profile : Form
     {
         string Email_ { get; set; }
+
         public Profile()
         {
             InitializeComponent();
@@ -22,6 +23,7 @@ namespace design
             NameText.ReadOnly = true;
             EmailText.ReadOnly = true;
             PasswordText.ReadOnly = true;
+            PasswordText.KeyPress += PasswordText_KeyPress;
 
         }
         public Profile(string email)
@@ -42,7 +44,16 @@ namespace design
             NameText.ReadOnly = true;
             EmailText.ReadOnly = true;
             PasswordText.ReadOnly = true;
+            PasswordText.KeyPress += PasswordText_KeyPress;
 
+        }
+
+        private void PasswordText_KeyPress(object? sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == ' ')
+            {
+                e.Handled = true;
+            }
         }
 
         private void EditButton_Click(object sender, EventArgs e)

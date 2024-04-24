@@ -1,4 +1,13 @@
 ﻿using DB_993;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace design
 {
@@ -7,6 +16,7 @@ namespace design
         string Email { get; set; }
         int I { get; set; }
         Dictionary<int, decimal> DictRecom { get; set; }
+
         public MainWindow()
         {
             InitializeComponent();
@@ -19,64 +29,14 @@ namespace design
             FullListRecommendation(getRecommendation);
             FillRecommendation();
         }
+
         public MainWindow(string email)
         {
             InitializeComponent();
             Disign();
             Email = email;
         }
-        public void FullListRecommendation(GetRecommendation getRecommendation)
-        {
-            Dictionary<int, decimal> dictRecom = new Dictionary<int, decimal>();
-            using (var context = new ApplicationContex())
-            {
-                var existingRealty = context.Realtys.ToList();
-                for (int i = 0; i < existingRealty.Count; i++)
-                {
-                    dictRecom.Add(existingRealty[i].Id, CalculateOverallRating(getRecommendation, existingRealty[i]));
-                }
-                DictRecom = dictRecom;
 
-            }
-
-        }
-        public void FillRecommendation()
-        {
-            if (I < 0 && I > DictRecom.Count)
-            {
-                return;
-            }
-            var sortDict = from pair in DictRecom orderby pair.Value descending select pair;
-            List<int> sortList = new List<int>();
-            foreach (var pair in sortDict)
-            {
-                sortList.Add(pair.Key);
-            }
-            using (var context = new ApplicationContex())
-            {
-
-                var existingRealty = context.Realtys.FirstOrDefault(realty => realty.Id == sortList[I]);
-                RealtyPhoto.Image = Image.FromFile(existingRealty!.PhotoRealty!.ToString());
-                AddressText.Text = existingRealty.Address;
-                PriceText.Text = existingRealty.Price.ToString();
-                FloorText.Text = existingRealty.Floor.ToString();
-                SquareText.Text = existingRealty.Square.ToString();
-            }
-        }
-        public decimal CalculateOverallRating(GetRecommendation getRecommendation, Realty existingRealty)
-        {
-
-            decimal comparisonPrice = getRecommendation.RatingPrice < existingRealty.Price ? (existingRealty.Price / getRecommendation.RatingPrice) : (getRecommendation.RatingPrice / existingRealty.Price);
-            decimal comparisonFloor = getRecommendation.RatingFloоr < existingRealty.Floor ? (existingRealty.Floor / getRecommendation.RatingFloоr) : (getRecommendation.RatingFloоr / existingRealty.Floor);
-            decimal comparisonSquare = getRecommendation.RatingSquare < existingRealty.Square ? (existingRealty.Square / getRecommendation.RatingPrice) : (getRecommendation.RatingSquare / existingRealty.Square);
-            decimal comparisonRooms = getRecommendation.RatingRooms < existingRealty.Rooms ? (existingRealty.Rooms / getRecommendation.RatingRooms) : (getRecommendation.RatingRooms / existingRealty.Rooms);
-            int comparisonCity = getRecommendation.RatingCity == existingRealty.City ? (1) : (0);
-            int comparisonType = getRecommendation.RatingType == existingRealty.Type ? (1) : (0);
-            int comparisonForWgat = getRecommendation.RatingForWhat == existingRealty.ForWhat ? (1) : (0);
-
-            decimal overallRating = (comparisonPrice + comparisonFloor + comparisonSquare + comparisonRooms + comparisonCity + comparisonType + comparisonForWgat) / 7;
-            return overallRating;
-        }
         public void Disign()
         {
             label1.Parent = Picture3;
@@ -141,6 +101,59 @@ namespace design
             AddBlackListButton.FlatStyle = FlatStyle.Flat;
         }
 
+        public void FullListRecommendation(GetRecommendation getRecommendation)
+        {
+            Dictionary<int, decimal> dictRecom = new Dictionary<int, decimal>();
+            using (var context = new ApplicationContex())
+            {
+                var existingRealty = context.Realtys.ToList();
+                for (int i = 0; i < existingRealty.Count; i++)
+                {
+                    dictRecom.Add(existingRealty[i].Id, CalculateOverallRating(getRecommendation, existingRealty[i]));
+                }
+                DictRecom = dictRecom;
+
+            }
+
+        }
+        public void FillRecommendation()
+        {
+            if (I < 0 && I > DictRecom.Count)
+            {
+                return;
+            }
+            var sortDict = from pair in DictRecom orderby pair.Value descending select pair;
+            List<int> sortList = new List<int>();
+            foreach (var pair in sortDict)
+            {
+                sortList.Add(pair.Key);
+            }
+            using (var context = new ApplicationContex())
+            {
+
+                var existingRealty = context.Realtys.FirstOrDefault(realty => realty.Id == sortList[I]);
+                RealtyPhoto.Image = Image.FromFile(existingRealty!.PhotoRealty!.ToString());
+                AddressText.Text = existingRealty.Address;
+                PriceText.Text = existingRealty.Price.ToString();
+                FloorText.Text = existingRealty.Floor.ToString();
+                SquareText.Text = existingRealty.Square.ToString();
+            }
+        }
+        public decimal CalculateOverallRating(GetRecommendation getRecommendation, Realty existingRealty)
+        {
+
+            decimal comparisonPrice = getRecommendation.RatingPrice < existingRealty.Price ? (existingRealty.Price / getRecommendation.RatingPrice) : (getRecommendation.RatingPrice / existingRealty.Price);
+            decimal comparisonFloor = getRecommendation.RatingFloоr < existingRealty.Floor ? (existingRealty.Floor / getRecommendation.RatingFloоr) : (getRecommendation.RatingFloоr / existingRealty.Floor);
+            decimal comparisonSquare = getRecommendation.RatingSquare < existingRealty.Square ? (existingRealty.Square / getRecommendation.RatingPrice) : (getRecommendation.RatingSquare / existingRealty.Square);
+            decimal comparisonRooms = getRecommendation.RatingRooms < existingRealty.Rooms ? (existingRealty.Rooms / getRecommendation.RatingRooms) : (getRecommendation.RatingRooms / existingRealty.Rooms);
+            int comparisonCity = getRecommendation.RatingCity == existingRealty.City ? (1) : (0);
+            int comparisonType = getRecommendation.RatingType == existingRealty.Type ? (1) : (0);
+            int comparisonForWgat = getRecommendation.RatingForWhat == existingRealty.ForWhat ? (1) : (0);
+
+            decimal overallRating = (comparisonPrice + comparisonFloor + comparisonSquare + comparisonRooms + comparisonCity + comparisonType + comparisonForWgat) / 7;
+            return overallRating;
+        }
+
         private void ProfileButton_Click(object sender, EventArgs e)
         {
             Profile profile = new Profile(Email);
@@ -168,21 +181,24 @@ namespace design
             this.Close();
         }
 
-        private void StraightButton_Click(object sender, EventArgs e)
+        private void BlackListButton_Click(object sender, EventArgs e)
         {
-            if(DictRecom != null)
-            {
-                if (I++ < DictRecom.Count)
-                {
-                    I++;
-                    FillRecommendation();
-                }
-            }
-            
+            BlackList blackList = new BlackList();
+            blackList.ShowDialog();
+        }
+
+        private void MyListsButton_Click(object sender, EventArgs e)
+        {
+            MyCollections myCollections = new MyCollections();
+            myCollections.ShowDialog();
+        }
+
+        private void EstimateButton_Click(object sender, EventArgs e)
+        {
 
         }
 
-        private void BackButton_Click(object sender, EventArgs e)
+        private void BackButton_Click_1(object sender, EventArgs e)
         {
             if (DictRecom != null)
             {
@@ -192,7 +208,18 @@ namespace design
                     FillRecommendation();
                 }
             }
-           
+        }
+
+        private void StraightButton_Click_1(object sender, EventArgs e)
+        {
+            if (DictRecom != null)
+            {
+                if (I++ < DictRecom.Count)
+                {
+                    I++;
+                    FillRecommendation();
+                }
+            }
         }
     }
 }
